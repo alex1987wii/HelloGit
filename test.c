@@ -10,10 +10,12 @@ struct event_map{
 	event_handler_t handler;
 };
 event_handler_t evt_map[EVENT_MAX];
+/*
 struct event_queue{
 	int head,tail;
 	int event[EVENT_MAX];
 }evt_queue;
+*/
 void postEvt(int evt)
 {
 	evt_queue.event[evt_queue.head++] = evt;
